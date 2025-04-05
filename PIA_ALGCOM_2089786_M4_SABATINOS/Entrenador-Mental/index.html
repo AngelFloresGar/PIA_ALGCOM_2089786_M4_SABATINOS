@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Entrenador Mental</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #1e1e1e;
+      color: #00ff99;
+      padding: 15px;
+      width: 400px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #00ff99;
+      color: #1e1e1e;
+      border: none;
+      padding: 12px;
+      margin: 6px 0;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1em;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      margin-top: 5px;
+    }
+    #pregunta {
+      min-height: 50px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <h2>Entrenador Mental</h2>
+  <div id="menu">
+    <button id="btnMemoria">Juego de Memoria</button>
+    <button id="btnOperaciones">Juego de Operaciones</button>
+    <button id="btnSecuencias">Juego de Secuencias</button>
+    <button id="btnPuntaje">Ver Puntaje</button>
+  </div>
+
+  <div id="juego" style="display:none;">
+    <p id="pregunta"></p>
+    <input id="respuesta" type="text" placeholder="Tu respuesta" />
+    <button id="btnVerificar">Verificar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
